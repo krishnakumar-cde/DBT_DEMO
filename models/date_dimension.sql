@@ -6,7 +6,7 @@ with cte as (
     {{get_daytype('started_at')}} as day_type,
     {{get_season('started_at')}} as Station_of_year
     from 
-    {{ source('demo', 'bike') }}
+   {{ ref('stg_bike') }}
     where started_at != 'started_at'
 
 )
