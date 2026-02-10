@@ -7,3 +7,4 @@ sources:
     tables:
       - name: weather
       - name: orders
+      - name: bike
